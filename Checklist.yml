@@ -14,6 +14,7 @@
       password: A1rwaysNZ2411
       timeout: 120
       port: '22'
+      ssh_private_key_file: SHA256:BWrXpEtWBd9rK/O8itja76sg1H5iNSw7l2hFr1Q9AIw
 #endregion
 
 #region task
