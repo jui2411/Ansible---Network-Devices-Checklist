@@ -9,8 +9,11 @@
 #region Variables
   vars:
     credential:
+      host: 10.16.96.121
       username: jasonu
       password: A1rwaysNZ2411
+      timeout: 120
+      port: '22'
 #endregion
 
 #region task
