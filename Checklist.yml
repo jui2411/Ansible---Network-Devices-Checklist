@@ -18,10 +18,10 @@
           - "show access-list"
         register: response
 
-    - name: print outputs
-      debug:
-        var: item.stdout
-      with_items: "{{response.results}}"
+   # - name: print outputs
+   #   debug:
+   #     var: item.stdout
+   #   with_items: "{{response.results}}"
 
         
 #endregion  
