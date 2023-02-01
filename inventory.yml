@@ -1,5 +1,4 @@
 ...
   all:
     hosts:
-      LAB-NOC-NX02:
-        ansible_host: 10.16.96.121
+      10.16.96.121
