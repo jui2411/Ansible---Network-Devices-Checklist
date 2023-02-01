@@ -7,13 +7,17 @@
     - juniper.junos
 
 #region Variables
-
+  vars:
+    credential:
+      username: Jason1
+      password: A1rwaysNZ2411
 #endregion
 
 #region task
   tasks: 
     - name: test task
       juniper_junos_command:
+        provider: "{{ credential }}"
         commands:
           - "show access-list"
         register: response
