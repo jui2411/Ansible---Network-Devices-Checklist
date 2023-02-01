@@ -1,0 +1,39 @@
+---
+- name: Automation Tool
+  hosts: all
+  connection: local
+  gather_facts: no
+  roles:
+    - juniper.junos
+
+#region Variables
+  vars:
+    ansible_host: 10.16.96.120
+    username: Jason1
+    password: A1rwaysNZ2411
+
+    # Credential Dictionary
+    credentials:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+      timeout: 120
+      port: '22'
+#endregion
+
+#region task
+  tasks: 
+    - name: test task
+      juniper_junos_command:
+        
+        commands:
+          - "show access-list"
+        register: response
+
+    - name: print outputs
+      debug:
+        var: item.stdout
+      with_items: "{{response.results}}"
+
+        
+#endregion  
