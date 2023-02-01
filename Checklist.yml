@@ -8,13 +8,13 @@
 
 #region Variables
 
-  vars_prompt:
-    - name: username
-      prompt: Junos Username
-      private: no
-    - name: password
-      prompt: Junos Password
-      private: yes
+  #vars_prompt:
+  #  - name: username
+  #    prompt: Junos Username
+  #    private: no
+  #  - name: password
+  #    prompt: Junos Password
+  #    private: yes
 
   vars:
     credentials:
