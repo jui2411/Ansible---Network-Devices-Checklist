@@ -20,7 +20,7 @@
         provider: "{{ credential }}"
         commands:
           - "show access-list"
-        register: response
+      register: response
 
    # - name: print outputs
    #   debug:
