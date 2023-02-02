@@ -1,0 +1,6 @@
+---
+devices:
+  LAB-CHATC_CAMPUS-SW02:
+    ansible_host: 10.16.96.121
+    # ansible_network_os: vyos.vyos.vyos
+    ansible_user: jasonu
