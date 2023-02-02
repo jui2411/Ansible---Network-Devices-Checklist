@@ -4,7 +4,7 @@
   connection: local
   gather_facts: no
   roles:
-    - Juniper.junos
+    - juniper.junos
 
 #region Variables
 
