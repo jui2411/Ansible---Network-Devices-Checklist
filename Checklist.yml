@@ -20,6 +20,8 @@
     credentials:
       username: "{{ username }}"
       password: "{{ password }}"
+      timeout: 120
+      port: '22'
 #endregion
 
 #region task
