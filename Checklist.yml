@@ -19,8 +19,8 @@
   vars:
     credentials:
       #host: 10.16.96.121
-      username: jasonu #"{{ username }}"
-      password: A1rwaysNZ2411 #"{{ password }}"
+      # username: jasonu #"{{ username }}"
+      # password: A1rwaysNZ2411 #"{{ password }}"
       timeout: 120
       port: 22
 #endregion
