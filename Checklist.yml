@@ -3,8 +3,8 @@
   hosts: all
   connection: local
   gather_facts: no
-  # roles:
-  #   - juniper.junos
+  roles:
+    - juniper.junos
 
 #region Variables
 
