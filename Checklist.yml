@@ -3,8 +3,8 @@
   hosts: all
   connection: local
   gather_facts: no
-  roles:
-    - juniper.junos
+  # roles:
+  #   - juniper.junos
 
 #region Variables
 
@@ -18,11 +18,8 @@
 
   vars:
     credentials:
-      #host: 10.16.96.121
       username: "{{ username }}"
       password: "{{ password }}"
-      timeout: 120
-      port: '22'
 #endregion
 
 #region task
@@ -32,12 +29,12 @@
         provider: "{{ credentials }}"
         commands:
           - "show access-list"
-      register: response
+      register: output
 
-   # - name: print outputs
-   #   debug:
-   #     var: item.stdout
-   #   with_items: "{{response.results}}"
+    - name: print outputs
+      debug:
+        var: output
+      # with_items: "{{response.results}}"
 
         
 #endregion  
