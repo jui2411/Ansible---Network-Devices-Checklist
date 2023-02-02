@@ -1,10 +1,10 @@
 ---
-- name: Automation Tool
+- name: Get Device Information
   hosts: all
   connection: local
   gather_facts: no
   roles:
-    - juniper.junos
+    - Juniper.junos
 
 #region Variables
 
@@ -22,7 +22,7 @@
       username: "{{ username }}"
       password: "{{ password }}"
       timeout: 120
-      port: 830
+      port: '22'
 #endregion
 
 #region task
