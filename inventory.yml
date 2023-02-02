@@ -1,4 +1,4 @@
 ---
-devices:
+hosts:
   LAB-CHATC_CAMPUS-SW02:
-    hosts: 10.16.96.121
+    ansible_host: 10.16.96.121
