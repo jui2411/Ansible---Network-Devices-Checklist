@@ -18,7 +18,7 @@
 
   vars:
     connection_info:
-      host: LAB-AAOC-MPLS-PE02 #'10.16.96.121'
+      host: '10.16.96.121'
       port: '22'
       username: "{{ username }}"
       password: "{{ password }}"
