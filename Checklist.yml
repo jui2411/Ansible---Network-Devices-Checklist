@@ -22,7 +22,7 @@
       port: '22'
       username: "{{ username }}"
       password: "{{ password }}"
-      ssh_private_key_file: SHA256:dw5XE4AS18xijatseiznvJpStHXLGC6MrF0CniX+kzg jasonu@lab-noc-scr01
+      ssh_private_key_file: dw5XE4AS18xijatseiznvJpStHXLGC6MrF0CniX+kzg
 #endregion
 
 #region task
