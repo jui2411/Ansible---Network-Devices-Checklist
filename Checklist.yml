@@ -18,11 +18,11 @@
 
   vars:
     connection_info:
-      host: '172.16.14.46'
+      host: LAB-AAOC-MPLS-PE02 #'172.16.14.46'
       port: '22'
       username: "{{ username }}"
       password: "{{ password }}"
-      ssh_private_key_file: dw5XE4AS18xijatseiznvJpStHXLGC6MrF0CniX+kzg
+      #ssh_private_key_file: dw5XE4AS18xijatseiznvJpStHXLGC6MrF0CniX+kzg
 #endregion
 
 #region task
