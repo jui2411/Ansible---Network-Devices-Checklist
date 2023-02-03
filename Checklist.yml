@@ -18,7 +18,7 @@
 
   vars:
     connection_info:
-      host: '10.16.96.121'
+      host: 10.16.96.121
       port: '22'
       username: "{{ username }}"
       password: "{{ password }}"
